@@ -1,6 +1,6 @@
 # Python Developer course. 2019-03
 
-## log analyzer
+## Log Analyzer
 
 ## Cpython
 
