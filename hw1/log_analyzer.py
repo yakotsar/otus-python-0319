@@ -22,7 +22,6 @@ config = {
         "LOG_DIR": "./log",
         }
 
-name_pattern = 'nginx-access-ui.log-'
 
 def main(config):
     report_name = get_report_name()
@@ -143,10 +142,9 @@ if __name__ == "__main__":
 
     read_conf(args.config, config)
 
-    logging.basicCongig(filename=config.get('LOGFILE'), level = logging.INFO)
+    logging.basicConfig(filename=config.get('LOGFILE'), level = logging.INFO)
     formatter = logging.Formatter('[%(asctime)s] %(levelname).1s %(message)s')
-    logging.setFormatter(formatter)
+    #logging.setFormatter(formatter)
     date_format = '%Y.%m.%d %H:%M:%S'
     
-    print(config)
     main(config)
